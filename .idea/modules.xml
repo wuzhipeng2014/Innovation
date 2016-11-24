@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HadoopTest/HadoopTest.iml" filepath="$PROJECT_DIR$/HadoopTest/HadoopTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaExercise.iml" filepath="$PROJECT_DIR$/JavaExercise.iml" />
     </modules>
   </component>

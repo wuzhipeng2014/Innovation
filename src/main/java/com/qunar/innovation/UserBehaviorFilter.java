@@ -88,7 +88,7 @@ public class UserBehaviorFilter extends Configured implements Tool {
 
         Configuration conf = this.getConf();
         conf.set("mapred.job.queue.name", "wirelessdev");
-        conf.set("mapreduce.map.memory.mb", "1024");
+        conf.set("mapreduce.map.memory.mb", "8192");
         conf.set("mapreduce.reduce.memory.mb", "8192");
         // conf.set("mapred.child.reduce.java.opts", "-Xmx8192m");
         // conf.set("mapreduce.reduce.java.opts", "-Xmx8192m");

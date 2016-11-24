@@ -22,10 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="JavaExercise" />
+        <module name="HadoopTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="HadoopTest" target="1.6" />
       <module name="JavaExercise" target="1.6" />
     </bytecodeTargetLevel>
   </component>
