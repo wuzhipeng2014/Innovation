@@ -33,6 +33,7 @@ import java.util.Map;
 
 
 /**
+ * 用户行为数据异常poi统计(短时间内poi发生变化的用户)
  * Created by zhipengwu on 16-11-21.
  */
 public class AbnormalPOI extends Configured implements Tool {
