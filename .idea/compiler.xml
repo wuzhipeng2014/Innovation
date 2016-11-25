@@ -23,11 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="HadoopTest" />
+        <module name="JavaTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HadoopTest" target="1.6" />
       <module name="JavaExercise" target="1.6" />
+      <module name="JavaTest" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
