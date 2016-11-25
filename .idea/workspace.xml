@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbb68f7e-f2ca-42b5-8041-88b2f65687fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaExercise.iws" />
@@ -845,12 +844,12 @@
       <workItem from="1480065970701" duration="2242000" />
       <workItem from="1480073159698" duration="3062000" />
       <workItem from="1480076490252" duration="1260000" />
-      <workItem from="1480077778306" duration="152000" />
+      <workItem from="1480077778306" duration="518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33357000" />
+    <option name="totallyTimeSpent" value="33723000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
