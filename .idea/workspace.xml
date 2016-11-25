@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbb68f7e-f2ca-42b5-8041-88b2f65687fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopUtil/HadoopUtil.iml" afterPath="$PROJECT_DIR$/HadoopUtil/HadoopUtil.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java" afterPath="$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/FileUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/HadoopReadFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/RegExpUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/TimeUtil.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/FileTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/LoggerTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/ParamsTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/RegExpTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/StatisticTest.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/JavaTest/src/main/java/test/StringTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="JavaExercise.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,51 +37,7 @@
     <favorites_list name="JavaExercise" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="UserBehaviorFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/UserBehaviorFilter/UserBehaviorFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="24" column="2" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
-              <folding>
-                <element signature="class#UserBehaviorFilterMapper#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="method#setup#0;class#UserBehaviorFilterMapper#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="method#map#0;class#UserBehaviorFilterMapper#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="class#UserBehaviorFilterReducer#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="method#reduce#0;class#UserBehaviorFilterReducer#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="method#run#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="e#3341#3399#0" expanded="false" />
-                <element signature="docComment;method#main#0;class#UserBehaviorFilter#0" expanded="false" />
-                <element signature="method#main#0;class#UserBehaviorFilter#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbnormalPOI.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
-              <folding>
-                <element signature="class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#setup#0;class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#map#0;class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="class#2086:2134" expanded="false" />
-                <element signature="method#getOrDefault#0;class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#setup#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#reduce#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#cleanup#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="docComment;method#judgeAbnormalPOI#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#judgeAbnormalPOI#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
-                <element signature="method#main#0;class#AbnormalPOI#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -102,6 +67,8 @@
         <option value="$PROJECT_DIR$/HadoopTest/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java" />
+        <option value="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/HadoopReadFile.java" />
+        <option value="$PROJECT_DIR$/JavaTest/src/main/java/test/FileTest.java" />
       </list>
     </option>
   </component>
@@ -256,74 +223,6 @@
               <option name="myItemId" value="qunar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UserBehaviorFilter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaExercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaExercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HadoopUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qunar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaExercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JavaExercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HadoopUtil" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="qunar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AbnormalPOI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -335,19 +234,21 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../AbnormalPOI" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../JavaTest" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.qunar.innovation" />
     </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.qunar.UserBehaviorFilter" />
-    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.qunar.UserBehaviorFilter" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/JavaTest/src/main/java/test" />
+      <recent name="$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil" />
       <recent name="$PROJECT_DIR$/HadoopTest/src/main/java/com/qunar/AbnormalPOI" />
     </key>
   </component>
@@ -1035,16 +936,16 @@
       <workItem from="1479888643519" duration="3241000" />
       <workItem from="1479973363691" duration="4361000" />
       <workItem from="1480065970701" duration="2242000" />
-      <workItem from="1480073159698" duration="1225000" />
+      <workItem from="1480073159698" duration="1698000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30108000" />
+    <option name="totallyTimeSpent" value="30581000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1055,10 +956,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38840738" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42207053" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32992035" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2721763" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19724518" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24958949" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1544,8 +1445,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HadoopUtil/src/main/java/com/qunar/AbnormalPOI/AbnormalPOI.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="36" column="36" selection-start-line="36" selection-start-column="36" selection-end-line="36" selection-end-column="36" />
+        <state relative-caret-position="104">
+          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
           <folding>
             <element signature="class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
             <element signature="method#setup#0;class#AbnormalPOIMapper#0;class#AbnormalPOI#0" expanded="false" />
@@ -1560,6 +1461,86 @@
             <element signature="method#judgeAbnormalPOI#0;class#AbnormalPOIReducer#0;class#AbnormalPOI#0" expanded="false" />
             <element signature="method#main#0;class#AbnormalPOI#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/FileUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/TimeUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/HadoopReadFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/com/qunar/commonutil/RegExpUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1138">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/RegExpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/StatisticTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/StringTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/LoggerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/ParamsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/JavaTest/src/main/java/test/FileTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding />
         </state>
       </provider>
     </entry>
