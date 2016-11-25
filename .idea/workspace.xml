@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbb68f7e-f2ca-42b5-8041-88b2f65687fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTest/HadoopTest.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HadoopTest/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/qunar/innovation/UserBehaviorFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/qunar/innovation/UserBehaviorFilter.java" />
-    </list>
+    <list default="true" id="cbb68f7e-f2ca-42b5-8041-88b2f65687fb" name="Default" comment="" />
     <ignored path="JavaExercise.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +27,8 @@
       <file leaf-file-name="UserBehaviorFilter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qunar/innovation/UserBehaviorFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+            <state relative-caret-position="474">
+              <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
               <folding>
                 <element signature="docComment;class#UserBehaviorFilter#0" expanded="false" />
                 <element signature="class#UserBehaviorFilterMapper#0;class#UserBehaviorFilter#0" expanded="false" />
@@ -237,7 +229,7 @@
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../search_analysis" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -929,12 +921,12 @@
       <workItem from="1479798955160" duration="17098000" />
       <workItem from="1479870759546" duration="1941000" />
       <workItem from="1479888643519" duration="3241000" />
-      <workItem from="1479973363691" duration="2914000" />
+      <workItem from="1479973363691" duration="4361000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25194000" />
+    <option name="totallyTimeSpent" value="26641000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="24" width="1877" height="1056" extended-state="6" />
@@ -1262,8 +1254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qunar/innovation/UserBehaviorFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="91" column="55" selection-start-line="91" selection-start-column="55" selection-end-line="91" selection-end-column="55" />
+        <state relative-caret-position="474">
+          <caret line="94" column="49" selection-start-line="94" selection-start-column="49" selection-end-line="94" selection-end-column="49" />
           <folding>
             <element signature="docComment;class#UserBehaviorFilter#0" expanded="false" />
             <element signature="class#UserBehaviorFilterMapper#0;class#UserBehaviorFilter#0" expanded="false" />
