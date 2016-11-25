@@ -28,7 +28,6 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="HadoopTest" target="1.6" />
       <module name="HadoopUtil" target="1.6" />
       <module name="JavaExercise" target="1.6" />
       <module name="JavaTest" target="1.6" />
