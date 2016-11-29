@@ -21,43 +21,40 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
- * 根据关键字过滤日志
- *
- * Created by zhipengwu on 16-11-22.
+ * 根据关键字过滤日志 考虑使用正则表达式实现 Created by zhipengwu on 16-11-22.
  */
 public class UserBehaviorFilter extends Configured implements Tool {
 
     public static class UserBehaviorFilterMapper extends Mapper<Object, Text, Text, Text> {
-        public   String targetKey;
+        public String targetKey;
         public Pattern pattern;
 
         @Override
         protected void setup(Context context) throws IOException, InterruptedException {
             super.setup(context);
             Configuration conf = context.getConfiguration();
-            targetKey=conf.get("target");
-            System.out.println("####################target: "+targetKey);
+            targetKey = conf.get("target");
+            System.out.println("####################target: " + targetKey);
 
-//            targetKey="DADC3DB9-8159-20DE-3681-F634CD7E110E";
-            String regex="(.*?)(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2},\\d{1,3})(.*?)";
+            // targetKey="DADC3DB9-8159-20DE-3681-F634CD7E110E";
+            String regex = "(.*?)(\\d{4}-\\d{2}-\\d{2} \\d{2}:\\d{2}:\\d{2},\\d{1,3})(.*?)";
             pattern = Pattern.compile(regex);
 
         }
 
         @Override
         protected void map(Object key, Text value, Context context) throws IOException, InterruptedException {
-            String line =value.toString();
+            String line = value.toString();
 
-
-            //时间字符串例子: 2016-11-18 21:45:36,583
-            String logtime="";
-            System.out.println("####################target: "+targetKey);
-            if (line!=null && line.contains(targetKey)){
+            // 时间字符串例子: 2016-11-18 21:45:36,583
+            String logtime = "";
+            System.out.println("####################target: " + targetKey);
+            if (line != null && line.contains(targetKey)) {
                 Matcher matcher = pattern.matcher(line);
                 if (matcher.matches()) {
                     logtime = matcher.group(2);
                 }
-                context.write(new Text(logtime),new Text(line));
+                context.write(new Text(logtime), new Text(line));
             }
         }
     }
@@ -66,15 +63,14 @@ public class UserBehaviorFilter extends Configured implements Tool {
         @Override
         protected void reduce(Text key, Iterable<Text> values, Context context)
                 throws IOException, InterruptedException {
-            for(Text value:values){
-                context.write(NullWritable.get(),value);
+            for (Text value : values) {
+                context.write(NullWritable.get(), value);
             }
         }
     }
 
     @Override
-    public int run(String[] args) throws Exception
-    {
+    public int run(String[] args) throws Exception {
 
         if (args.length != 4) {
             System.err.println("./run <input> <output> <reducetasknumber>");
@@ -83,19 +79,20 @@ public class UserBehaviorFilter extends Configured implements Tool {
         String inputPaths = args[0];
         String outputPath = args[1];
         int numReduceTasks = Integer.parseInt(args[2]);
-        String targetKey= args[3]; //要提取的用户gid
-        System.out.println("##############:targetKey: "+targetKey);
+        String targetKey = args[3]; // 要提取的用户gid
+        System.out.println("##############:targetKey: " + targetKey);
 
         Configuration conf = this.getConf();
         conf.set("mapred.job.queue.name", "wirelessdev");
         conf.set("mapreduce.map.memory.mb", "8192");
         conf.set("mapreduce.reduce.memory.mb", "8192");
-        // conf.set("mapred.child.reduce.java.opts", "-Xmx8192m");
-        // conf.set("mapreduce.reduce.java.opts", "-Xmx8192m");
+        conf.set("mapred.child.reduce.java.opts", "-Xmx8192m");
+        conf.set("mapreduce.reduce.java.opts", "-Xmx8192m");
+        conf.setBoolean("mapreduce.input.fileinputformat.input.dir.recursive", true);
         conf.set("mapred.job.priority", JobPriority.VERY_HIGH.name());
         conf.setBoolean("mapred.output.compress", true);
         conf.setClass("mapred.output.compression.codec", GzipCodec.class, CompressionCodec.class);
-        //传递变量
+        // 传递变量
         conf.setStrings("target", targetKey);
 
         Job job = Job.getInstance(conf);
@@ -117,14 +114,9 @@ public class UserBehaviorFilter extends Configured implements Tool {
         return success ? 0 : 1;
     }
 
-
     /**
      *
-     * @param args
-     * 输入路径
-     * 输出路径
-     * reduce个数
-     * 要包含的目标关键字
+     * @param args 输入路径 输出路径 reduce个数 要包含的目标关键字
      */
     public static void main(String[] args) {
         int status = 0;

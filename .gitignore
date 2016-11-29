@@ -7,8 +7,9 @@
 将删除 target/
 
 target/
-.idea/
+.idea/*
 .idea/workspace.xml
+
 
 
 
