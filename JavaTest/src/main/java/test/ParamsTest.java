@@ -1,12 +1,12 @@
 package test;
 
-import java.util.List;
-
+import com.google.common.collect.Lists;
+import com.qunar.commonutil.TimeUtil;
 import org.apache.commons.lang.StringUtils;
 
-import com.google.common.collect.Lists;
+import java.util.List;
 
-import util.TimeUtil;
+
 
 /**
  * Created by zhipengwu on 16-8-15.

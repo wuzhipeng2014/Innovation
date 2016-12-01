@@ -1,11 +1,16 @@
 package com.qunar.commonutil;
 
+import com.google.common.base.Preconditions;
+import com.google.common.collect.Lists;
+
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.List;
-
-import com.google.common.collect.Lists;
 
 /**
  * Created by zhipengwu on 16-8-12.
@@ -52,4 +57,25 @@ public class FileUtil {
         }
         return list;
     }
+
+    public static void writeFile(List<String> list,String fileName){
+        Preconditions.checkNotNull(list,"输入列表为空");
+        File file =new File(fileName);
+        if(!file.exists()){
+            try {
+                file.createNewFile();
+                FileWriter fileWritter = new FileWriter(file.getName(),true);
+                BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
+                for (String s:list){
+                bufferWritter.write(s);
+                    bufferWritter.newLine();
+                }
+                bufferWritter.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
 }

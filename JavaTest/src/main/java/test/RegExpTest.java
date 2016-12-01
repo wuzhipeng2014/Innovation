@@ -1,10 +1,11 @@
 package test;
 
+import com.qunar.commonutil.FileUtil;
+import com.qunar.commonutil.RegExpUtil;
+
 import java.util.List;
 import java.util.regex.Pattern;
 
-import util.FileUtil;
-import util.RegExpUtil;
 
 /**
  * Created by zhipengwu on 16-8-23.
