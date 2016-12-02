@@ -1,7 +1,10 @@
 package com.qunar.commonutil;
 
+import com.google.common.base.Charsets;
 import com.google.common.base.Preconditions;
 import com.google.common.collect.Lists;
+import org.apache.commons.io.FileUtils;
+import org.apache.commons.io.LineIterator;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,7 +13,9 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
 
 /**
  * Created by zhipengwu on 16-8-12.
@@ -75,6 +80,39 @@ public class FileUtil {
                 e.printStackTrace();
             }
         }
+    }
+
+    public static Iterable<String> getFileIterator(String fileName) throws IOException{
+        String filePath=FileUtil.class.getClassLoader().getResource(fileName).getPath();
+        final LineIterator lineIterator = FileUtils.lineIterator(new File(filePath), Charsets.UTF_8.name());
+        return new Iterable<String>() {
+            @Override
+            public Iterator<String> iterator() {
+                return new Iterator<String>() {
+                    @Override
+                    public boolean hasNext() {
+                        boolean hasNext = lineIterator.hasNext();
+                        if (!hasNext) {
+                            LineIterator.closeQuietly(lineIterator);
+                        }
+                        return hasNext;
+                    }
+
+                    @Override
+                    public String next() {
+                        if (!hasNext()) {
+                            throw new NoSuchElementException("No more lines");
+                        }
+                        return lineIterator.next();
+                    }
+
+                    @Override
+                    public void remove() {
+                        throw new UnsupportedOperationException();
+                    }
+                };
+            }
+        };
     }
 
 
