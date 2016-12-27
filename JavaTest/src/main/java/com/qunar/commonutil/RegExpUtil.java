@@ -22,7 +22,7 @@ public class RegExpUtil {
         List<String> stringList= Lists.newArrayList();
         while (matcher.find()){
             String group = matcher.group();
-            System.out.println(group);
+//            System.out.println(group);
             stringList.add(group);
         }
         return stringList;

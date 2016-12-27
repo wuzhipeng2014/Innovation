@@ -1,9 +1,12 @@
 package test;
 
 
+import com.google.common.collect.Lists;
 import com.qunar.commonutil.FileUtil;
+import org.junit.Test;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created by zhipengwu on 16-8-11.
@@ -27,6 +30,15 @@ public class FileTest {
             e.printStackTrace();
         }
 
+    }
+
+    @Test
+    public void testWriteFile(){
+        List<String> lists= Lists.newArrayList();
+
+        lists.add("123");
+        lists.add("456");
+        FileUtil.writeFile(lists,"test.txt");
     }
 
 }

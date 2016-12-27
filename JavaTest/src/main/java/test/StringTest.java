@@ -1,11 +1,13 @@
 package test;
 
 import com.qunar.commonutil.FileUtil;
+import com.qunar.commonutil.RegExpUtil;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -60,10 +62,19 @@ public static Pattern pattern=Pattern.compile(target);
 //            splitString(item);
 //        }
 //        readFile("etl_client_adr");
-        readFile("partca");
-        System.out.println("################");
-        System.out.println("count= "+count);
-        System.out.println("counterror= "+counterror  );
+//        readFile("partca");
+//        System.out.println("################");
+//        System.out.println("count= "+count);
+//        System.out.println("counterror= "+counterror  );
+
+        String line ="{\"gid\":\"2282DF05-7489-1BB4-415D-D6A68387B964\",\"vid\":\"60001146\",\"cid\":\"C1012\",\"uid\":\"869637025347435\",\"cuid\":\"869637025347435\",\"pid\":\"10010\",\"username\":\"\",\"dt\":\"2016-12-14\",\"clickPos\":\"15\",\"clickTime\":\"20160706094158980\",\"clickType\":\"item\",\"itemName\":\"[门票]扬州瘦西湖门票{淡季}";
+      Pattern compile = Pattern.compile("\"gid\":\".*?\"");
+        List<String> strings = RegExpUtil.MatchReg(compile, line);
+        System.out.println(strings.get(0));
+        int colonIndex = strings.get(0).indexOf(":");
+        if (colonIndex>0){
+            System.out.println(strings.get(0).substring(colonIndex+2,strings.get(0).length()-1));
+        }
 
 
     }
