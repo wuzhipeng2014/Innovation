@@ -13,6 +13,7 @@ splithotel_type_201607_statistic.txt
 *.xls
 *.pub
 *.iml
+JavaTest/src/main/resources/*
 
 
 
