@@ -1,7 +1,7 @@
 #!coding: utf-8
 # Filename: list.py
 
-shoplist=['apple','mango','carrot','banana']
+shoplist = ['apple', 'mango', 'carrot', 'banana']
 
 print 'shoplist.length= ', len(shoplist), '....'
 
@@ -12,6 +12,3 @@ shoplist.remove('apple')
 del shoplist[0]
 shoplist.sort()
 print shoplist
-
-
-
