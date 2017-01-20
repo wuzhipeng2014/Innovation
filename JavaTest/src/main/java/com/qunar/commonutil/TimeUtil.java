@@ -1,12 +1,13 @@
 package com.qunar.commonutil;
 
+import org.apache.commons.lang3.time.DateUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Created by zhipengwu on 16-8-29.
@@ -57,9 +58,17 @@ public class TimeUtil {
 
 
     public static void main(String[] args) {
-        System.out.println(formateTime("2016081ff9"));
-        System.out.println(formateTime("dfhhfgtghhg"));
-        System.out.println(formateTime(null));
-        System.out.println(formateTime(""));
+//        System.out.println(formateTime("2016081ff9"));
+//        System.out.println(formateTime("dfhhfgtghhg"));
+//        System.out.println(formateTime(null));
+//        System.out.println(formateTime(""));
+
+        String actionTime="2017-01-15 07:12:50:232";
+        try {
+            Date date = DateUtils.parseDate(actionTime,"yyyy-MM-dd HH:mm:ss:SSS");
+            System.out.println(date.toString());
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }
