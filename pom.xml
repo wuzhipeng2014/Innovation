@@ -11,6 +11,7 @@
     <modules>
         <module>HadoopUtil</module>
         <module>JavaTest</module>
+        <module>Innovation</module>
     </modules>
 
     <properties>
